@@ -1,0 +1,39 @@
+{
+  "name": "challenge_1",
+  "version": "1.0.0",
+  "description": "MiniApps2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinPaoletta/hrr45-mini-apps-2.git"
+  },
+  "keywords": [
+    "Historical",
+    "Events"
+  ],
+  "author": "Justin Paoletta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinPaoletta/hrr45-mini-apps-2/issues"
+  },
+  "homepage": "https://github.com/JustinPaoletta/hrr45-mini-apps-2#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-paginate": "^6.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

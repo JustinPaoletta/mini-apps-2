@@ -1,0 +1,43 @@
+body{
+  background-color: rgb(26, 19, 43);
+}
+
+.appContainer {
+  text-align: center;
+  margin-left: 300px;
+  background-color: rgb(243, 243, 243);
+  width:1000px;
+  margin-top: 50px;
+}
+
+.appContainer p {
+  padding-right: 6vw;
+  padding-left: 6vw;
+}
+
+.appContainer ul{
+  margin-top: 300px;
+}
+
+.appContainer li{
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding:1rem;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.Pagination {
+  background-color: rgb(121, 118, 112);
+  height:80px;
+  padding-top: 50px;
+}
+
+.search {
+  margin-top: 50px;
+}
+
+.Title {
+  padding-top: 50px;
+}
