@@ -1,0 +1,14 @@
+.chart {
+  width: 80vw;
+  margin-left: 10vw;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+h6 {
+  text-align: center;
+}
