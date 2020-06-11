@@ -52,6 +52,7 @@ h1{
 
 
 .backRow{
+  margin-top: 5vh;
   width:20vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -85,6 +86,7 @@ h1{
   border-radius: 50%;
   border: 2px solid black;
   text-align: center;
+  cursor: pointer;
 }
 
 h3{
@@ -100,5 +102,5 @@ h3{
 .submitBowl{
   margin-left: 45vw;
   width:8vw;
-  margin-top: 2vh;
+  margin-top: 5vh;
 }
