@@ -9,14 +9,32 @@ class App extends React.Component {
     this.state = {
       name: '',
       gameState: 'start',
+      score: [],
+      totalScore: 0,
     }
 
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.submitBowl = this.submitBowl.bind(this);
   }
 
   componentDidMount(){
 
+  }
+
+  submitBowl(value) {
+    console.log(this.state.score)
+    if (value === "X") {
+      this.setState((prev) => ({
+        score: prev.score.concat(value),
+        totalScore: prev.totalScore + 10
+      }))
+    } else {
+      this.setState((prev) => ({
+        score: prev.score.concat(value),
+        totalScore: prev.totalScore + value
+      }))
+    }
   }
 
   handleChange(e){
@@ -44,10 +62,10 @@ class App extends React.Component {
     if (this.state.gameState === 'letsbowl') {
       myGame =  <div>
                   <h1>Bowl-O-Rama!</h1>
-                  <Scorecard playerName={this.state.name} />
+                  <Scorecard playerName={this.state.name} score={this.state.score} total={this.state.totalScore} />
                   <br></br>
                   <div className="underCard">
-                    <Turn />
+                    <Turn submitBowl={this.submitBowl} />
                   </div>
                 </div>
     }

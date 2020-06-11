@@ -37,6 +37,7 @@ h1{
 .bottom{
   display: grid;
   grid-template-rows: 1fr 2fr;
+  text-align: right;
 }
 
 .bt{
@@ -47,6 +48,7 @@ h1{
 .scoreSquare{
   border: 1px solid black;
   max-height: 50px;
+  text-align: right;
 }
 
 
@@ -103,4 +105,11 @@ h3{
   margin-left: 45vw;
   width:8vw;
   margin-top: 5vh;
+}
+.name{
+  margin-right: 10px;
+}
+
+.total {
+  margin-right: 10px;
 }

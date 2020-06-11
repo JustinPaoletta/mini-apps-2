@@ -29,15 +29,11 @@ class Turn extends React.Component {
       col0: 'black',
     }
     this.handlePinClick = this.handlePinClick.bind(this);
-    this.submitBowl = this.submitBowl.bind(this);
+
   }
 
   componentDidMount(){
 
-  }
-
-  submitBowl() {
-    console.log(this.state.pinsClicked);
   }
 
   handlePinClick(value){
@@ -146,7 +142,7 @@ class Turn extends React.Component {
 
     if (value === "10" && this.state.bg10 === "white") {
       this.setState({
-        pinsClicked: 10,
+        pinsClicked: "X",
         bg10: 'black',
         col10: 'white',
         bg9: 'black',
@@ -409,6 +405,8 @@ class Turn extends React.Component {
 
   render(){
     console.log(this.state.pinsClicked)
+    // break down the html of the pins into an array
+    // logically only render the pins that are relevant for ecample if the player knocked down 7 pins on first roll now you should render only 3
     return(
       <div className="pinContainer">
         <div>
@@ -459,7 +457,7 @@ class Turn extends React.Component {
             </div>
           </div>
         </div>
-        <button className="submitBowl" onClick={() => { this.submitBowl() }}>Submit Turn</button>
+        <button className="submitBowl" onClick={() => { this.props.submitBowl(this.state.pinsClicked) }}>Submit Turn</button>
       </div>
     )
   }
